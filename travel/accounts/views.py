@@ -50,7 +50,7 @@ def register(request):
                 return redirect('login')
         else:
             messages.info(request,'password doesnot match')
-            print('pasword olunga podu da junni')
+            print('pasword is wrong')
             return redirect('register')
     else: return render(request, 'register.html')
     
